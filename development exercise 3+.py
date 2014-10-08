@@ -7,7 +7,13 @@ if hours >= 0 and hours <= 40:
     answer = hours * rate_of_pay 
     print("{0}: This is how much you have earned this week.".format(answer))
 elif hours > 40:
-    answer = hours * rate_of_pay
-    answer1 = hours - 40
-    answer2 = hours - 40 * 1.5
-    print("{0}: This is how much you've earned this week with {0} hours which are 1.5 times more than your original hourly rate of pay.".format(answer + answer2)(answer1))
+   answer1 = hours*(rate_of_pay*1.5)
+   print("{0}: this is how much you've earned adding the extra hours.".format(answer1))
+elif hours > 60:
+    print("Enter a number between 0 and 60.")
+elif hours < 0 :
+    print("Enter a number beween 0 and 60.")
+    
+   
+   
+    
